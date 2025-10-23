@@ -3,6 +3,7 @@ package com.cpfChecker.main.services;
 public class JsonCapture {
     private String valid;
     private String formatted;
+    
     public String getValid() {
         return valid;
     }
