@@ -141,5 +141,4 @@ Fluxo sugerido:
 ## Contato
 
 Autor: Thiago4596
-
-Se preferir, inclua um e-mail ou link para perfil GitHub para contato direto.
+https://github.com/Thiago4596
