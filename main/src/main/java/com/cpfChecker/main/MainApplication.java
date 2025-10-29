@@ -1,5 +1,7 @@
 package com.cpfChecker.main;
 
+import java.util.Scanner;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,7 +14,17 @@ public class MainApplication {
         SpringApplication.run(MainApplication.class, args);
 
         var cpf1 = new CpfConsult();
-        System.out.println(cpf1.cpfNumberInput());
-    }
+        Scanner cpf = new Scanner(System.in);
 
+        boolean sair = false;
+        while (!sair) {
+            System.out.print("Digite o CPF (somente números): ");
+            String cpfnumber = cpf.nextLine();
+            if (cpfnumber.equals("sair")) {
+                sair = true;
+            }
+            cpf1.cpfNumberInput(cpfnumber);
+        }
+        cpf.close();
+    }
 }
